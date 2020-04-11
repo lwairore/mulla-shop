@@ -11,15 +11,6 @@ class OrderItemInline(admin.TabularInline):
     raw_id_fields = ['product']
 
 
-@admin.register(models.Order)
-class OrderAdmin(admin.ModelAdmin):
-    list_display = ['id', 'first_name', 'last_name', 'email',
-                    'address', 'postal_code', 'city', 'paid', 'created', 'updated']
-    list_filter = ['paid', 'created', 'updated']
-    inlines = [OrderItemInline]
-    actions = ['export_to_csv']
-
-
 def export_to_csv(modeladmin, request, queryset):
     opts = modeladmin.model._meta
     response = HttpResponse(content_type='text/csv')
@@ -44,3 +35,12 @@ def export_to_csv(modeladmin, request, queryset):
 
 
 export_to_csv.short_description = 'Export to CSV'
+
+
+@admin.register(models.Order)
+class OrderAdmin(admin.ModelAdmin):
+    list_display = ['id', 'first_name', 'last_name', 'email',
+                    'address', 'postal_code', 'city', 'paid', 'created', 'updated']
+    list_filter = ['paid', 'created', 'updated']
+    inlines = [OrderItemInline]
+    actions = [export_to_csv]
