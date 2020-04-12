@@ -37,7 +37,11 @@ def order_create(request):
     if request.method == 'POST':
         form = forms.OrderCreateForm(request.POST)
         if form.is_valid():
-            order = form.save()
+            order = form.save(commit=False)
+            if cart.coupon:
+                order.coupon = cart.coupon
+                order.discount = cart.coupon.discount
+            order.save()
             for item in cart:
                 models.OrderItem.objects.create(
                     order=order,
