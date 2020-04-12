@@ -7,7 +7,7 @@ from . import models, forms
 @require_POST
 def coupon_apply(request):
     now = timezone.now()
-    form = forms.CouponApplyForm(require.POST)
+    form = forms.CouponApplyForm(request.POST)
     if form.is_valid():
         code = form.cleaned_data['code']
         try:
