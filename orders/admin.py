@@ -5,6 +5,7 @@ from django.http import HttpResponse
 import datetime
 from django.urls import reverse
 from django.utils.safestring import mark_safe
+from django.utils.html import format_html
 
 # Register your models here.
 
@@ -61,3 +62,20 @@ class OrderAdmin(admin.ModelAdmin):
     list_filter = ['paid', 'created', 'updated']
     inlines = [OrderItemInline]
     actions = [export_to_csv]
+
+
+def change_button(obj):
+    return format_html('<a class="btn" href="/admin/orders/order/{}/change/">Change</a>', obj.id)
+
+
+def delete_button(obj):
+    return format_html('<a class="btn" href="/admin/orders/order/{}/delete/">Delete</a>', obj.id)
+
+
+@admin.register(models.OrderItem)
+class OrderItemAdmin(admin.ModelAdmin):
+    list_display = ['order', 'product', 'price',
+                    'quantity', change_button, delete_button]
+    raw_id_fields = ['order']
+    list_editable = ['price', 'quantity']
+    list_display_links = ['order']
