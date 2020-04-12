@@ -78,3 +78,9 @@ class Cart(object):
         # remove cart from session
         del self.session[settings.CART_SESSION_ID]
         self.save()
+
+    @property
+    def coupon(self):
+        if self.coupon_id:
+            return Coupon.objects.get(id=self.coupon_id)
+        return None
