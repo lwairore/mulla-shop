@@ -3,6 +3,8 @@ from . import models
 import csv
 from django.http import HttpResponse
 import datetime
+from django.urls import reverse
+from django.utils.safestring import mark_safe
 
 # Register your models here.
 
@@ -45,3 +47,8 @@ class OrderAdmin(admin.ModelAdmin):
     list_filter = ['paid', 'created', 'updated']
     inlines = [OrderItemInline]
     actions = [export_to_csv]
+
+
+def order_detail(obj):
+    return mark_safe('<a href="{}">View</a>'.format(
+        reverse('orders:admin_order_detail', args=[obj.id])))
