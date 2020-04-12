@@ -45,6 +45,15 @@ def order_detail(obj):
         reverse('orders:admin_order_detail', args=[obj.id])))
 
 
+def order_pdf(obj):
+    return mark_safe('<a href="{}">'.format(
+        reverse('orders:admin_order_pdf', args=[obj.id])
+    ))
+
+
+order_pdf.short_description = 'Invoice'
+
+
 @admin.register(models.Order)
 class OrderAdmin(admin.ModelAdmin):
     list_display = ['id', 'first_name', 'last_name', 'email',
