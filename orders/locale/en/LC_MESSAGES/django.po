@@ -9,65 +9,67 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-13 18:59+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2020-04-13 19:17+0227\n"
+"Last-Translator: b'  <karangu@spiral.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
 
 #: orders/models.py:12
 msgid "first name"
-msgstr ""
+msgstr "first name"
 
 #: orders/models.py:13
 msgid "last name"
-msgstr ""
+msgstr "first name"
 
 #: orders/models.py:14
 msgid "e-mail"
-msgstr ""
+msgstr "first name"
 
 #: orders/models.py:15
 msgid "address"
-msgstr ""
+msgstr "first name"
 
 #: orders/models.py:16
 msgid "postal code"
-msgstr ""
+msgstr "postal code"
 
 #: orders/models.py:17
 msgid "city"
-msgstr ""
+msgstr "city"
 
 #: orders/templates/orders/order/create.html:5
 #: orders/templates/orders/order/create.html:9
 msgid "Checkout"
-msgstr ""
+msgstr "Checkout"
 
 #: orders/templates/orders/order/create.html:12
 msgid "Your order"
-msgstr ""
+msgstr "Your order"
 
 #: orders/templates/orders/order/create.html:30
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: orders/templates/orders/order/create.html:35
 msgid "Place order"
-msgstr ""
+msgstr "Place order"
 
 #: orders/templates/orders/order/created.html:5
 #: orders/templates/orders/order/created.html:9
 msgid "Thank you"
-msgstr ""
+msgstr "Thank you"
 
 #: orders/templates/orders/order/created.html:10
 #, python-format
 msgid ""
 "\n"
-"<p>Your order has been successfully completed. Your order number is <strong>"
-"%(order_id)s</strong>.</p>\n"
+"<p>Your order has been successfully completed. Your order number is <strong>%(order_id)s</strong>.</p>\n"
 msgstr ""
+"\n"
+"<p>Your order has been successfully completed. Your order number is <strong>%(order_id)s</strong>.</p>\n"
