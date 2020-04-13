@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-13 18:29+0300\n"
+"POT-Creation-Date: 2020-04-13 18:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,67 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: cart/forms.py:11 cart/templates/cart/detail.html:16
+msgid "Quantity"
+msgstr ""
+
+#: cart/templates/cart/detail.html:6 cart/templates/cart/detail.html:10
+msgid "Your shopping cart"
+msgstr ""
+
+#: cart/templates/cart/detail.html:14
+#: virtual/lib/python3.6/site-packages/django/db/models/fields/files.py:360
+msgid "Image"
+msgstr ""
+
+#: cart/templates/cart/detail.html:15
+msgid "Product"
+msgstr ""
+
+#: cart/templates/cart/detail.html:17 cart/templates/cart/detail.html:41
+msgid "Remove"
+msgstr ""
+
+#: cart/templates/cart/detail.html:18
+msgid "Unit price"
+msgstr ""
+
+#: cart/templates/cart/detail.html:19
+msgid "Price"
+msgstr ""
+
+#: cart/templates/cart/detail.html:50
+msgid "Subtotal"
+msgstr ""
+
+#: cart/templates/cart/detail.html:55
+#, python-format
+msgid ""
+"\n"
+"            <td>\"%(code)s\" coupon (%(discount)s%% off)</td>\n"
+"            "
+msgstr ""
+
+#: cart/templates/cart/detail.html:65
+msgid "Total"
+msgstr ""
+
+#: cart/templates/cart/detail.html:74
+msgid "Apply a coupon"
+msgstr ""
+
+#: cart/templates/cart/detail.html:82
+msgid "Continue shopping"
+msgstr ""
+
+#: cart/templates/cart/detail.html:83
+msgid "Checkout"
+msgstr ""
+
+#: coupons/forms.py:6
+msgid "Coupon"
+msgstr ""
+
 #: myshop/settings.py:133
 msgid "English"
 msgstr "Inglés"
@@ -25,6 +86,35 @@ msgstr "Inglés"
 #: myshop/settings.py:134
 msgid "Spanish"
 msgstr "Español"
+
+#: shop/templates/shop/base.html:8 shop/templates/shop/base.html:14
+msgid "My shop"
+msgstr ""
+
+#: shop/templates/shop/base.html:20
+msgid "Your cart"
+msgstr ""
+
+#: shop/templates/shop/base.html:30
+msgid "Your cart is empty."
+msgstr ""
+
+#: shop/templates/shop/product/detail.html:19
+msgid "Add to cart"
+msgstr ""
+
+#: shop/templates/shop/product/list.html:6
+#: shop/templates/shop/product/list.html:24
+msgid "Products"
+msgstr ""
+
+#: shop/templates/shop/product/list.html:11
+msgid "Categories"
+msgstr ""
+
+#: shop/templates/shop/product/list.html:14
+msgid "All"
+msgstr ""
 
 #: virtual/lib/python3.6/site-packages/django/contrib/messages/apps.py:7
 msgid "Messages"
@@ -409,10 +499,6 @@ msgstr ""
 
 #: virtual/lib/python3.6/site-packages/django/db/models/fields/files.py:221
 msgid "File"
-msgstr ""
-
-#: virtual/lib/python3.6/site-packages/django/db/models/fields/files.py:360
-msgid "Image"
 msgstr ""
 
 #: virtual/lib/python3.6/site-packages/django/db/models/fields/related.py:778
