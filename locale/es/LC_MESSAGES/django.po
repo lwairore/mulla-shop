@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-13 19:35+0300\n"
-"PO-Revision-Date: 2020-04-13 19:41+0227\n"
+"PO-Revision-Date: 2020-04-13 20:31+0227\n"
 "Last-Translator: b'  <karangu@spiral.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -68,19 +68,19 @@ msgstr "Total"
 
 #: cart/templates/cart/detail.html:74
 msgid "Apply a coupon"
-msgstr ""
+msgstr "Aplica un cupón"
 
 #: cart/templates/cart/detail.html:82
 msgid "Continue shopping"
-msgstr ""
+msgstr "Seguir comprando"
 
 #: cart/templates/cart/detail.html:83
 msgid "Checkout"
-msgstr ""
+msgstr "Revisa"
 
 #: coupons/forms.py:6
 msgid "Coupon"
-msgstr ""
+msgstr "Cupón"
 
 #: myshop/settings.py:134
 msgid "English"
@@ -92,27 +92,27 @@ msgstr "Español"
 
 #: myshop/urls.py:24
 msgid "admin/"
-msgstr ""
+msgstr "administración/"
 
 #: myshop/urls.py:25
 msgid "cart/"
-msgstr ""
+msgstr "carro/"
 
 #: myshop/urls.py:26
 msgid "orders/"
-msgstr ""
+msgstr "pedidos/"
 
 #: myshop/urls.py:27
 msgid "payment/"
-msgstr ""
+msgstr "pago/"
 
 #: myshop/urls.py:28
 msgid "coupons/"
-msgstr ""
+msgstr "cupones/"
 
 #: payment/urls.py:8
 msgid "process/"
-msgstr ""
+msgstr "proceso/"
 
 #: payment/urls.py:9
 msgid "done/"
@@ -206,38 +206,42 @@ msgstr ""
 
 #: virtual/lib/python3.6/site-packages/django/core/validators.py:165
 msgid "Enter a valid email address."
-msgstr ""
+msgstr "Introduzca una dirección de correo electrónico válida."
 
 #. Translators: "letters" means latin letters: a-z and A-Z.
 #: virtual/lib/python3.6/site-packages/django/core/validators.py:239
 msgid ""
 "Enter a valid 'slug' consisting of letters, numbers, underscores or hyphens."
 msgstr ""
+"Ingrese un 'slug' válido que conste de letras, números, guiones bajos o "
+"guiones."
 
 #: virtual/lib/python3.6/site-packages/django/core/validators.py:246
 msgid ""
 "Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or"
 " hyphens."
 msgstr ""
+"Ingrese un 'slug' válido que conste de letras, números, guiones bajos o "
+"guiones."
 
 #: virtual/lib/python3.6/site-packages/django/core/validators.py:255
 #: virtual/lib/python3.6/site-packages/django/core/validators.py:275
 msgid "Enter a valid IPv4 address."
-msgstr ""
+msgstr "Ingrese una dirección IPv4 válida."
 
 #: virtual/lib/python3.6/site-packages/django/core/validators.py:260
 #: virtual/lib/python3.6/site-packages/django/core/validators.py:276
 msgid "Enter a valid IPv6 address."
-msgstr ""
+msgstr "Ingrese una dirección IPv6 válida."
 
 #: virtual/lib/python3.6/site-packages/django/core/validators.py:270
 #: virtual/lib/python3.6/site-packages/django/core/validators.py:274
 msgid "Enter a valid IPv4 or IPv6 address."
-msgstr ""
+msgstr "Ingrese una dirección IPv4 o IPv6 válida."
 
 #: virtual/lib/python3.6/site-packages/django/core/validators.py:304
 msgid "Enter only digits separated by commas."
-msgstr ""
+msgstr "Ingrese solo dígitos separados por comas."
 
 #: virtual/lib/python3.6/site-packages/django/core/validators.py:310
 #, python-format
