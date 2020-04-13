@@ -1,12 +1,18 @@
 from django.db import models
 from django.urls import reverse
+from parler.models import TranslatableModel, TranslatedFields
 
 # Create your models here.
 
 
-class Category(models.Model):
-    name = models.CharField(max_length=200, db_index=True)
-    slug = models.SlugField(max_length=200, unique=True)
+class Category(TranslatableModel):
+    translations = TranslatedFields(
+        name=models.CharField(max_length=200,
+                              db_index=True),
+        slug=models.SlugField(max_length=200,
+                              db_index=True,
+                              unique=True)
+    )
 
     class Meta:
         ordering = ('name',)
