@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-13 19:35+0300\n"
-"PO-Revision-Date: 2020-04-13 20:29+0227\n"
+"PO-Revision-Date: 2020-04-13 20:59+0227\n"
 "Last-Translator: b'  <karangu@spiral.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -92,19 +92,19 @@ msgstr ""
 
 #: myshop/urls.py:24
 msgid "admin/"
-msgstr ""
+msgstr "admin/"
 
 #: myshop/urls.py:25
 msgid "cart/"
-msgstr ""
+msgstr "cart/"
 
 #: myshop/urls.py:26
 msgid "orders/"
-msgstr ""
+msgstr "orders/"
 
 #: myshop/urls.py:27
 msgid "payment/"
-msgstr ""
+msgstr "payment/"
 
 #: myshop/urls.py:28
 msgid "coupons/"

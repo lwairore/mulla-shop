@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-13 19:35+0300\n"
-"PO-Revision-Date: 2020-04-13 20:21+0227\n"
+"PO-Revision-Date: 2020-04-13 20:57+0227\n"
 "Last-Translator: b'  <karangu@spiral.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -25,15 +25,15 @@ msgstr "first name"
 
 #: orders/models.py:13
 msgid "last name"
-msgstr "first name"
+msgstr "last name"
 
 #: orders/models.py:14
 msgid "e-mail"
-msgstr "first name"
+msgstr "e-mail"
 
 #: orders/models.py:15
 msgid "address"
-msgstr "first name"
+msgstr "address"
 
 #: orders/models.py:16
 msgid "postal code"
@@ -76,4 +76,4 @@ msgstr ""
 
 #: orders/urls.py:8
 msgid "create/"
-msgstr "crear/"
+msgstr "create/"
