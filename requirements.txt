@@ -34,6 +34,7 @@ pylint==2.4.4
 Pyphen==0.9.5
 python-decouple==3.3
 pytz==2019.3
+redis==2.10.6
 requests==2.23.0
 six==1.14.0
 sqlparse==0.3.1
