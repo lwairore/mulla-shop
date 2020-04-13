@@ -15,7 +15,7 @@ class Category(TranslatableModel):
     )
 
     class Meta:
-        ordering = ('name',)
+        # ordering = ('name',)
         verbose_name = 'category'
         verbose_name_plural = 'categories'
 
