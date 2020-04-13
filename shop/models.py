@@ -41,13 +41,13 @@ class Product(TranslatableModel):
     updated = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ('name',)
+        # ordering = ('name',)
         """
              use the index_together meta option to specify an index for the id and slug fields together. 
              We define this index because we plan to query products by both id and slug. 
              Both fields are indexed together to improve performances for queries that utilize the two fields.
         """
-        index_together = (('id', 'slug'),)
+        # index_together = (('id', 'slug'),)
 
     def __str__(self):
         return self.name
