@@ -1,12 +1,12 @@
 from django.shortcuts import render, redirect, get_object_or_404
 import braintree
-from orders.models import Order
+from orders.models import Order, OrderItem
 from django.template.loader import render_to_string
 from django.core.mail import EmailMessage
 from django.conf import settings
 import weasyprint
 from io import BytesIO
-
+from shop.recommender import Recommender
 # Create your views here.
 
 
@@ -31,6 +31,10 @@ def payment_process(request):
             # store the unique transaction id
             order.braintree_id = result.transaction.id
             order.save()
+
+            r = Recommender()
+            order_items = OrderItem.objects.filter(order=order)
+            r.products_bought(order_items)
             # create invoice e-mail
             subject = 'My Shop - Invoice no. {}'.format(order.id)
             message = 'Please, find attached the invoice for your recent\
@@ -52,6 +56,7 @@ def payment_process(request):
                          'application/pdf')
             # send e-mail
             email.send()
+
             return redirect('payment:done')
         else:
             return redirect('payment:canceled')

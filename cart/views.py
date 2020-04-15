@@ -23,7 +23,9 @@ def cart_remove(request, product_id):
     cart = item_cart.Cart(request)
     product = get_object_or_404(shop_models.Product, id=product_id)
     cart.remove(product)
-    return redirect('cart:cart_detail')
+    if cart:
+        return redirect('cart:cart_detail')
+    return redirect('/')
 
 
 def cart_detail(request):
@@ -38,4 +40,5 @@ def cart_detail(request):
     cart_products = [item['product'] for item in cart]
     recommended_products = r.suggest_products_for(cart_products,
                                                   max_results=4)
+
     return render(request, 'cart/detail.html', {'cart': cart, 'coupon_apply_form': coupon_apply_form, 'recommended_products': recommended_products})
