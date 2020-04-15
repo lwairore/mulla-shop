@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from . import models
+from . import models, recommender
 from cart import forms as cart_forms
 
 # Create your views here.
@@ -23,6 +23,10 @@ def product_detail(request, id, slug):
     product = get_object_or_404(
         models.Product, id=id, slug=slug, available=True)
     cart_product_form = cart_forms.CartAddProductForm()
+
+    r = recommender.Recommender()
+    recommended_products = r.suggest_products_for([product], 4)
+
     return render(request,
                   'shop/product/detail.html',
-                  {'product': product, 'cart_product_form': cart_product_form})
+                  {'product': product, 'cart_product_form': cart_product_form, 'recommended_products': recommended_products})
